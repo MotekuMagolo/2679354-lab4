@@ -23,7 +23,7 @@ async function searchCountry(countryName) {
         const response = await fetch(`https://restcountries.com/v3.1/name/${countryName}`);
         
         if (!response.ok) {
-            throw new Error('Country not found. Please try again.');
+            throw new Error('Country not found. Please try again.');   
         }
         
         const data = await response.json();
